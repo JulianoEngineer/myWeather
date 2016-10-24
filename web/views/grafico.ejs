@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <title>myWeather</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script type="text/javascript">
+        var data = !{JSON.stringify(data)};
+    </script>
+</head>
+<body>
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+    <% } %>
+
+    <script src="mymodule.js"></script>
+    <script>
+        var da;
+        mymodule.test(da);
+        alert(da);
+    </script>
+    <!--<h1>Val: <span id="val"><%=val%></span></h1>
+    <script>
+        var data;
+        getData(data);
+
+        var x = data.x;
+        var y = data.y;
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: x,
+            datasets: [{
+                label: 'apples',
+                data: y,
+                backgroundColor: "rgba(153,255,51,0.4)"
+          }]
+        }
+      });
+    </script>-->
+    <canvas id="myChart" syle="width: 80%; margin: 15px auto;"></canvas>
+   
+</body>
+</html>
